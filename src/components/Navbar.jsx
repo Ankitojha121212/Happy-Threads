@@ -3,9 +3,14 @@ import logo from '../photos/logo5-removebg-preview.png';
 import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Navbar = () => {
+  const shop = () =>{
+      onclick={
+         
+      }
+  }
   return (
-    <nav className="flex items-center justify-evenly p-4 w-full h-14 shadow" style={{ backgroundColor: '#3e1317'} }>
-      <section>
+    <nav className="flex items-center justify-around p-4 w-full h-14 shadow" style={{ backgroundColor: '#3e1317'} }>
+      <section className='flex  '>
         <img src={logo} alt='logo' className="w-32" /> {/* Adjust the width as needed */}
       </section>
       <section className="flex space-x-4 text-yellow-500">
@@ -15,7 +20,7 @@ const Navbar = () => {
         <span><Link to='/aboutus' className=' hover:text-blue-500' >About Us</Link></span>
       </section>
       <section className='text-white'>
-        <button>Shop Now!</button>
+        <button  className="bg-red-600 p-2 border-solid border-2 border-gray-600 rounded-xl hover:text-blue-500 " value={shop}>Shop Now!</button>
       </section>
     </nav>
   );
