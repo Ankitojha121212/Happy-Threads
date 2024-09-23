@@ -6,3 +6,209 @@ body{
     /* background-color: #3e1317; */
     color: #ffffff;
 }
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.8s forwards ease-in-out;
+  }/* Navbar Link Styles */
+.nav-link {
+    position: relative;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Active Route Underline */
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4f9aff; /* Underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect (for inactive routes) */
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #4f9aff; /* Underline color */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* By default, hover should start with 0 width and animate to full */
+  .nav-link::after {
+    width: 0;
+  }
+
+  /* index.css */
+
+/* Fade in Up */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade in Left */
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Fade in Right */
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Assign animation classes */
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .animate-fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  .animate-fadeInRight {
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+
+
+  /* index.css */
+
+/* Slide In Down */
+@keyframes slideInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In Left */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide In Right */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Fade In Up */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bounce In */
+  @keyframes bounceIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Assigning classes to animations */
+  .animate-slideInDown {
+    animation: slideInDown 0.8s ease-in-out;
+  }
+  
+  .animate-slideInLeft {
+    animation: slideInLeft 0.8s ease-in-out;
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.8s ease-in-out;
+  }
+  
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  .animate-bounceIn {
+    animation: bounceIn 0.8s ease-in-out;
+  }
+  
+  
+  
+
+  /* index.css */
+
+/* Keyframes for custom scale animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Utility for animation */
+.animate-bounceIn {
+  animation: bounceIn 1s;
+}

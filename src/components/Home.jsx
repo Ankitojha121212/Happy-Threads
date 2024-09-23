@@ -3,6 +3,7 @@ import herosec from '../photos/herogood.jpg';
 import hero2 from '../photos/heroimg.jpg';
 import hero3 from '../photos/pexels-rdne-5699008.jpg'
 import ProductTypes from './ProductTypes';
+import hero1 from '../photos/pexels-tamanna-rumee-52377920-7957754.jpg'
 
 
 const slides = [
@@ -10,7 +11,7 @@ const slides = [
       id: 1,
       title: 'Welcome to Our Store',
       description: 'Find the best handcrafted suits and accessories for girls.',
-      backgroundImage: herosec, // Replace with your image
+      backgroundImage: hero1, // Replace with your image
     },
     {
       id: 2,
@@ -37,6 +38,7 @@ useEffect(() => {
 }, []);
 
 return (
+  <>
   <section
     className="relative h-screen bg-cover bg-center flex items-center justify-center transition-all duration-1000"
     style={{ backgroundImage: `url(${slides[currentSlide].backgroundImage})` }}
@@ -65,9 +67,9 @@ return (
         ></button>
       ))}
     </div>
-    
   </section>
-   
+    <ProductTypes/>
+   </>
 )
 }
 
